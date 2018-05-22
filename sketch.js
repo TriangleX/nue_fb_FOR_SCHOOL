@@ -8,10 +8,6 @@ let pipes = [];
 // A frame counter to determine when to add a pipe
 let counter = 0;
 
-let bgImg;
-let birdskin;
-let bgX;
-
 let parallax = 0.8;
 
 // Interface elements
@@ -26,11 +22,6 @@ let highScore = 0;
 // Training or just showing the current best
 let runBest = false;
 let runBestButton;
-
-function preload() {
-  bgImg = loadImage('graphics/background.jpeg');
-  birdskin = loadImage('graphics/birdtest.png');
-}
 
 function setup() {
   let canvas = createCanvas(600, 400);
@@ -69,7 +60,7 @@ function toggleState() {
 
 
 function draw() {
-  background(bgImg);
+  background(0);
 
   // bgX -= pipes.speed * parallax;
   // image(bgImg, bgX, 0, bgImg.width, height);
