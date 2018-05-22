@@ -20,8 +20,6 @@ class Bird {
     this.lift = -12;
     this.velocity = 0;
 
-    this.skin = birdskin;
-
     // Is this a copy of another Bird or a new one?
     // The Neural Network is the bird's "brain"
     if (brain instanceof NeuralNetwork) {
@@ -46,7 +44,6 @@ class Bird {
   show() {
     fill(255, 100);
     stroke(255);
-    image(this.skin, this.x - this.width / 2, this.y - this.height / 2, this.width, this.height);
     ellipse(this.x, this.y, this.r * 2, this.r * 2);
   }
 
